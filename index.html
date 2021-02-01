@@ -9,8 +9,7 @@
 		<!-- locomotive-scroll -->
 		<link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css"
-		/>
+			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css"/>
 		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
 	</head>
 	<body id="js-scroll">
@@ -228,13 +227,15 @@
 		</div>
 
 		<script>
-			<!--
+			
 			const scroll = new LocomotiveScroll({
-				el: document.querySelector("#js-scroll"),
+				el: document.querySelector("js-scroll"),
 				smooth: true,
 				smoothMobile: true,
-				inertia: 1.00,
+				inertia: 0.75,
 			}); 
+
+			
 		</script>
 	</body>
 </html>
