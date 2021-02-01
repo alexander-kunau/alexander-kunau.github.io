@@ -234,6 +234,8 @@
 				smoothMobile: true,
 				inertia: 0.75,
 			});
+
+			window.onbeforeunload = function () { window.scrollTo(0,0); };
 		</script>
 	</body>
 </html>
