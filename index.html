@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,10 @@
 		<link rel="stylesheet" href="css/style.css" />
 
 		<!-- locomotive-scroll -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css"/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css"
+		/>
 		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
 	</head>
 	<body id="js-scroll">
@@ -28,17 +31,14 @@
 				<!-- header -->
 				<div class="header">
 					<div class="header-container">
-						<h1>Alexander Kunau<br />
-						
-							<div class="dividerhalf"></div>
-							Visual<br />Designer</h1>
+						<h1>Alexander Kunau<br />Visual<br />Designer</h1>
 					</div>
 				</div>
 
 				<!-- hero-image -->
 				<div class="hero-image">
 					<div class="hero-image-container" data-scroll data-scroll-speed="2">
-						<img src="images/hero-image2.jpg" alt="" />
+						<img src="images/hero-image.jpg" alt="" />
 					</div>
 				</div>
 
@@ -132,7 +132,7 @@
 								<div class="divider"></div>
 
 								<div class="menu__item">
-									<a class="menu__item-link">/ Neue Welt Vol. 1</a>
+									<a class="menu__item-link">/Neue Welt Vol. 1</a>
 									<img class="menu__item-img" src="images/project-four.png" />
 									<div class="marquee">
 										<div class="marquee__inner">
@@ -147,7 +147,7 @@
 								<div class="divider"></div>
 
 								<div class="menu__item">
-									<a class="menu__item-link">/ Neue Welt Vol. 2</a>
+									<a href="" style="text-decoration: none;""  class="menu__item-link">/Neue Welt Vol. 2</a>
 									<img class="menu__item-img" src="images/project-five.png" />
 									<div class="marquee">
 										<div class="marquee__inner" aria-hidden="true">
@@ -225,13 +225,19 @@
 		</div>
 
 		<script>
-			
 			const scroll = new LocomotiveScroll({
-				el: document.querySelector("js-scroll"),
+				el: document.querySelector("#js-scroll"),
 				smooth: true,
 				smoothMobile: true,
 				inertia: 0.75,
-			}); 
+			});
+
+			function update() {
+    			_scroll.update();
+    			_scroll.scroll.reinitScrollBar();
+			}
+
+
 		</script>
 	</body>
 </html>
