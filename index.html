@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Minimalist Portfolio</title>
+		<title>Portfolio</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="js/funktionen.js" />
 
 		<!-- locomotive-scroll -->
 		<link
@@ -19,9 +20,11 @@
 				<!-- navbar -->
 				<div class="navbar">
 					<div class="navbar-container">
-						<div class="site-title">Alexander Kunau</div>
-						<div class="site-type">Portfolio</div>
-						<div class="site-year">2020</div>
+						<div class="site-title"><a >Über Mich</a></div>
+						<div class="site-type"><a></a>Projekte</a></div>
+					
+						<div class="site-year"><a href="#gedankengut" style="text-decoration: none;">Gedankengut</a></div>
+						<div class="site-year2"><a></a>Kontakt</a></div>
 					</div>
 				</div>
 
@@ -35,11 +38,11 @@
                             <div class="dividerhalf"></div>Visual<br />Designer</h1>
 					</div>
 				</div>
-
+	
 				<!-- hero-image -->
 				<div class="hero-image">
 					<div class="hero-image-container" data-scroll data-scroll-speed="2">
-						<img src="images/hero-image.jpg"/>
+						<img src="images/hero-image.jpg" alt="" />
 					</div>
 				</div>
 
@@ -58,6 +61,9 @@
 				<!-- about -->
 				<section class="about">
 					<div class="about-container">
+						<img src="images/hero-image.jpg" alt="" style="width: 100%; margin-top: 3em;  float: right;" />
+					</div>
+					<div class="about-container2">
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
 							quasi sapiente nisi minus neque non explicabo, magni cumque enim
@@ -88,59 +94,14 @@
 						<div>
 							<nav class="menu">
 								<div class="menu__item">
-									<a class="menu__item-link">/ Asterisks</a>
+									<a class="menu__item-link" href="projekttest.html">/ Neue Welt Vol. 1</a>
 									<img class="menu__item-img" src="images/project-one.jpeg" />
 									<div class="marquee">
 										<div class="marquee__inner">
-											<span>Asterisks</span>
-											<span>Asterisks</span>
-											<span>Asterisks</span>
-											<span>Asterisks</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="divider"></div>
-
-								<div class="menu__item">
-									<a class="menu__item-link">/ Unlocked</a>
-									<img class="menu__item-img" src="images/project-two.jpeg" />
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>Unlocked</span>
-											<span>Unlocked</span>
-											<span>Unlocked</span>
-											<span>Unlocked</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="divider"></div>
-
-								<div class="menu__item">
-									<a class="menu__item-link">/ Mac Miller - Dark Times</a>
-									<img class="menu__item-img" src="images/project-three.jpeg" />
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>Mac Miller - Dark Times</span>
-											<span>Mac Miller - Dark Times</span>
-											<span>Mac Miller - Dark Times</span>
-											<span>Mac Miller - Dark Times</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="divider"></div>
-
-								<div class="menu__item">
-									<a class="menu__item-link">/ Neue Welt Vol.1</a>
-									<img class="menu__item-img" src="images/project-four.png" />
-									<div class="marquee">
-										<div class="marquee__inner">
-											<span>Neue Welt Vol.1</span>
-											<span>Neue Welt Vol.1</span>
-											<span>Neue Welt Vol.1</span>
-											<span>Neue Welt Vol.1</span>
+											<span>Neue Welt Vol. 1</span>
+											<span>Neue Welt Vol. 1</span>
+											<span>Neue Welt Vol. 1</span>
+											<span>Neue Welt Vol. 1</span>
 										</div>
 									</div>
 								</div>
@@ -149,9 +110,9 @@
 
 								<div class="menu__item">
 									<a class="menu__item-link">/ Neue Welt Vol. 2</a>
-									<img class="menu__item-img" src="images/project-five.png" />
+									<img class="menu__item-img" src="images/project-two.jpeg" />
 									<div class="marquee">
-										<div class="marquee__inner" aria-hidden="true">
+										<div class="marquee__inner">
 											<span>Neue Welt Vol. 2</span>
 											<span>Neue Welt Vol. 2</span>
 											<span>Neue Welt Vol. 2</span>
@@ -159,10 +120,57 @@
 										</div>
 									</div>
 								</div>
+
+								<div class="divider"></div>
+
+								<div class="menu__item">
+									<a class="menu__item-link">/ LUNERY Skincare</a>
+									<img class="menu__item-img" src="images/project-three.jpeg" />
+									<div class="marquee">
+										<div class="marquee__inner">
+											<span>LUNERY Skincare</span>
+											<span>LUNERY Skincare</span>
+											<span>LUNERY Skincare</span>
+											<span>LUNERY Skincare</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="divider"></div>
+
+								<div class="menu__item">
+									<a class="menu__item-link">/ KONKEIT</a>
+									<img class="menu__item-img" src="images/project-four.png" />
+									<div class="marquee">
+										<div class="marquee__inner">
+											<span>KONKEIT</span>
+											<span>KONKEIT</span>
+											<span>KONKEIT</span>
+											<span>KONKEIT</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="divider"></div>
+
+								<div class="menu__item">
+									<a class="menu__item-link">/ A-STUDIO</a>
+									<img class="menu__item-img" src="images/project-five.png" />
+									<div class="marquee">
+										<div class="marquee__inner" aria-hidden="true">
+											<span>A-STUDIO</span>
+											<span>A-STUDIO</span>
+											<span>A-STUDIO</span>
+											<span>A-STUDIO</span>
+										</div>
+									</div>
+								</div>
 							</nav>
 						</div>
 					</div>
 				</section>
+
+				
 
 				<div class="whitespace"></div>
 
@@ -176,16 +184,42 @@
 
 				<div class="divider"></div>
 
-				<section class="clients">
+				<section class="clients" id="gedankengut">
 					<div class="clients-container">
-						<p>
-							<br />
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;telia, vizrt, edlund, pensam,
-							mp pension, charlie tango, molio, scout.org, pelican selfstorage,
-							danske bank, groupcare, banedanmark, samvirke, dsb, kmd,
-							udviklings og forenklings
-							<br />
-						</p>
+						<!-- Header -->
+<div class="kopf" id="myHeader">
+	<h1>Image Grid</h1>
+	<p>Click on the buttons to change the grid view.</p>
+	
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+	<div class="column">
+	  <img src="images/_exponat_01.jpg" style="width:100%">
+	  <img src="/w3images/rocks.jpg" style="width:100%">
+	  <img src="/w3images/falls2.jpg" style="width:100%">
+	 
+	</div>
+	<div class="column">
+	  <img src="images/_exponat_02.jpg" style="width:100%">
+	  <img src="/w3images/ocean.jpg" style="width:100%">
+	  <img src="/w3images/wedding.jpg" style="width:100%">
+
+	</div>  
+	<div class="column">
+	  <img src="/w3images/wedding.jpg" style="width:100%">
+	  <img src="/w3images/rocks.jpg" style="width:100%">
+	  <img src="/w3images/falls2.jpg" style="width:100%">
+
+	</div>
+	<div class="column">
+	  <img src="/w3images/underwater.jpg" style="width:100%">
+	  <img src="/w3images/ocean.jpg" style="width:100%">
+	  <img src="/w3images/wedding.jpg" style="width:100%">
+
+	</div>
+  </div>
 					</div>
 				</section>
 
@@ -209,6 +243,25 @@
 						<div class="socials-id tw"><a href="">twitter</a></div>
 					</div>
 				</section>
+				
+				<div class="row"> 
+					<div class="column">
+					  <img src="/w3images/wedding.jpg" style="width:100%">
+					
+					 
+					</div>
+					<div class="column">
+					  <img src="/w3images/underwater.jpg" style="width:100%">
+					 
+				
+					</div>  
+					<div class="column">
+					  <img src="/w3images/wedding.jpg" style="width:100%">
+					  
+				
+					</div>
+				
+				  </div>
 
 				<div class="divider"></div>
 
@@ -216,23 +269,15 @@
 				<div class="footer">
 					<div class="navbar">
 						<div class="navbar-container">
-							<div class="site-title">created by Alexander</div>
-							<div class="site-year">55.386656, 11.764279</div>
+							<div class="site-title">Impressum</div>
+							<div class="site-title">Datenschutzerklärung</div>
+							<div class="site-year">Kontakt</div>
+							<div class="site-year">2021-20XX</div>
 						</div>
 					</div>
 				</div>
 				<br />
 			</div>
 		</div>
-		<!--
-		<script>
-			const scroll = new LocomotiveScroll({
-				el: document.querySelector("#js-scroll"),
-				smooth: true,
-				smoothMobile: true,
-				inertia: 0.75,
-			});
-			-->
-		</script>
 	</body>
 </html>

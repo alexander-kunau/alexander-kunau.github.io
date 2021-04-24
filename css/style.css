@@ -1,9 +1,68 @@
+  @font-face {
+    font-family: 'Helvetica Now Display';
+    src: local('HelveticaNowDisplay Regular'), local('Helvetica-Now-Display-Regular'),
+        url('fonts/HelveticaNowDisplay-Regular.woff2') format('woff2'),
+        url('fonts/HelveticaNowDisplay-Regular.woff') format('woff'),
+        url('fonts/HelveticaNowDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Reg Ita'), local('Helvetica-Now-Display-Reg-Ita'),
+        url('fonts/HelveticaNowDisplay-RegIta.woff2') format('woff2'),
+        url('fonts/HelveticaNowDisplay-RegIta.woff') format('woff'),
+        url('fonts/HelveticaNowDisplay-RegIta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Helvetica Now Display';
+    src: local('HelveticaNowDisplay Medium'), local('Helvetica-Now-Display-Medium'),
+        url('fonts/HelveticaNowDisplay-Medium.woff2') format('woff2'),
+        url('fonts/HelveticaNowDisplay-Medium.woff') format('woff'),
+        url('fonts/HelveticaNowDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Medium Ita'), local('Helvetica-Now-Display-Medium-Itaic'),
+        url('fonts/HelveticaNowDisplay-MedIta.woff2') format('woff2'),
+        url('fonts/HelveticaNowDisplay-MedIta.woff') format('woff'),
+        url('fonts/HelveticaNowDisplay-MedIta.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Helvetica Now Display';
+    src: local('HelveticaNowDisplay Bold'), local('Helvetica-Now-Display-Bold'),
+        url('fonts/HelveticaNowDisplay-Bold.woff2') format('woff2'),
+        url('fonts/HelveticaNowDisplay-Bold.woff') format('woff'),
+        url('fonts/HelveticaNowDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Bold Ita'), local('Helvetica-Now-Display-Bold-Ita'),
+        url('fonts/HelveticaNowDisplay-BoldIta.woff2') format('woff2'),
+        url('fonts/HelveticaNowDisplay-BoldIta.woff') format('woff'),
+        url('fonts/HelveticaNowDisplay-BoldIta.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
 * {
 	margin: 0;
 	padding: 0%;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: "Sk-Modernist";
 	color: #fff;
 }
 
@@ -11,6 +70,7 @@ html,
 body {
 	overflow-x: hidden;
 	background: #0a0a0a;
+	scroll-behavior: smooth;
 
 }
 
@@ -30,12 +90,6 @@ body {
 	background: #fff;
 }
 
-.dividerhalf {
-	width: 50%;
-	height: 2px;
-	background: #fff;
-}
-
 .whitespace {
 	width: 100%;
 	height: 80px;
@@ -51,25 +105,35 @@ body {
 	font-size: 16px;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	font-family: "HelveticaNowDisplay Medium";
 }
 
 .navbar .navbar-container .site-title {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
+	text-align: left;
 }
 
 .navbar .navbar-container .site-type {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
+	text-align: left;
 }
 
 .navbar .navbar-container .site-year {
-	-webkit-box-flex: 2;
-	-ms-flex-positive: 2;
-	flex-grow: 2;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	text-align: right;
+}
+
+.navbar .navbar-container .site-year2{
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 	text-align: right;
 }
 
@@ -81,8 +145,8 @@ body {
 }
 
 .header .header-container h1 {
-	font-family: "Bigilla";
-	font-size: 10rem;
+	font-family: "HelveticaNowDisplay Regular";
+	font-size: 12rem;
 }
 
 @media (max-width: 900px) {
@@ -95,7 +159,7 @@ body {
 
 .hero-image {
 	width: 100%;
-	margin-top: -400px;
+	margin-top: -300px;
 }
 
 .hero-image::after {
@@ -139,6 +203,7 @@ body {
 
 .about {
 	width: 100%;
+	
 }
 
 .about::after {
@@ -148,12 +213,25 @@ body {
 }
 
 .about .about-container {
-	width: 70%;
+	width: 40%;
 	float: right;
+	font-family: "HelveticaNowDisplay Regular";
 }
 
+.about .about-container2 {
+	width: 60%;
+	float: right;
+	font-family: "HelveticaNowDisplay Regular";
+}
+
+
 .about .about-container p {
-	margin: 40px 0;
+	margin: 42px 0;
+	font-size: 36px;
+}
+
+.about .about-container2 p {
+	margin: 42px 0;
 	font-size: 36px;
 }
 
@@ -161,7 +239,15 @@ body {
 	.about .about-container {
 		width: 100%;
 	}
+
+	.about .about-container2 {
+		width: 100%;
+	}
 	.about .about-container p {
+		font-size: 24px;
+	}
+
+	.about .about-container2 p {
 		font-size: 24px;
 	}
 }
@@ -183,6 +269,7 @@ body {
 	transition: opacity 0.4s;
 	font-family: "Bigilla";
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .menu__item-link::before {
@@ -345,3 +432,158 @@ body {
 		font-size: 30px;
 	}
 }
+
+.project__container {
+    width: 70%;
+    margin: 100px auto;
+    /* border: 1px solid #5c5c5c; */
+    color: #fff;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.project__container-title h1{
+    color: #fff;
+    font-family: "GrandSlang Roman";
+    font-size: 140px;
+}
+
+.project__container-subtitle {
+    margin: 20px 0;
+    font-family: "Neue Montreal";
+    font-size: 16px;
+}
+
+.project__container-images {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    padding: 40px 0;
+}
+
+.project__image {
+    background: red;
+    width: 600px;
+    height: 500px;
+    margin: 40px auto;
+}
+
+.project__image-one {
+    background: url(../images/img-one.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-two {
+    position: relative;
+    top: -100px;
+    left: -260px;
+    background: url(../images/img-two.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-three {
+    position: relative;
+    left: 300px;
+    background: url(../images/img-three.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-four {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(../images/img-four.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project-next-link {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-next-link a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "GrandSlang Roman";
+    font-size: 160px;
+}
+
+.anime-js-title .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+@media(max-width: 900px) {
+    .project__container-title h1 {
+        font-size: 40px;
+    }
+
+    .project__container {
+        width: 80%;
+    }
+
+    .project__container-images {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .project__image {
+        width: 90%;
+    }
+
+    .project__image-one, .project__image-two, .project__image-three, .project__image-four {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+.kopf {
+	text-align: center;
+	padding: 32px;
+  }
+  
+  .row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  -ms-flex: 50%;
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column {
+	  -ms-flex: 100%;
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
